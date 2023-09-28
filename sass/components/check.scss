@@ -1,0 +1,45 @@
+/* BLOC PLAT */
+
+.Menucard__plat {
+	transition: all 500ms ease-in;
+}
+
+.Menucard:hover .Menucard__plat {
+	width: calc(85% - 60px);
+	transition: all 500ms ease-in;
+}
+
+/* BLOC PRIX */
+
+.Menucard__prix {
+	transition: all 500ms ease-out;
+}
+
+.Menucard:hover .Menucard__prix {
+	transition-property: transform;
+	transform: translateX(-60px);
+	transition: all 500ms ease-in;
+}
+
+/* TRANSLATE du Check */
+
+.Menucard__check {
+	transition: all 500ms ease-out;
+}
+
+.Menucard:hover .Menucard__check {
+	transition-property: transform;
+	transform: translateX(-60px);
+	transition: all 500ms ease-in;
+}
+
+/* ROTATE du Check */
+
+.Menucard__check--icon {
+	transition: all 0s;
+}
+
+.Menucard:hover .Menucard__check--icon {
+	transition: all 500ms linear;
+	transform: rotate(360deg);
+}

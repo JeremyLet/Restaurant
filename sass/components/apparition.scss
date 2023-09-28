@@ -1,0 +1,19 @@
+/* ANIMATION APPARATION MENUS */
+
+@for $i from 1 through 10 {
+	.Menucard-#{$i} {
+		opacity: 0;
+		animation: Apparition 1.5s 1 linear forwards;
+		animation-delay: 1s * $i;
+	}
+}
+
+@keyframes Apparition {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(-20px);
+	}
+}

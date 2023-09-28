@@ -1,0 +1,19 @@
+/* EFFET HOVER DES BOUTONS */
+
+.filterbutton:hover {
+	background-color: lighten($second-color, 20%);
+	cursor: pointer;
+	.filterbutton__icon {
+		color: $first-color;
+	}
+}
+
+.form__result-button:hover {
+	background: linear-gradient(
+		to top,
+		lighten($first-color, 10%),
+		lighten($second-color, 10%)
+	);
+	box-shadow: 0px 5px 2px darken($background-alt-4, 10%);
+	cursor: pointer;
+}

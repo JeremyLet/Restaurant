@@ -1,0 +1,31 @@
+.headerHome {
+	height: 65px;
+	&__title {
+		padding-top: 20px;
+		font-family: $font-logoTitres;
+		font-size: $font-size-XXL;
+		text-align: center;
+		margin: 0;
+		@include tablet {
+			font-size: calc($font-size-XXL * 1.5);
+		}
+	}
+}
+
+.headerMenu {
+	height: 65px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 25px 0px 25px;
+	.headerMenu__returnHome {
+		width: 25%;
+		font-size: $font-size-L;
+		font-weight: bolder;
+	}
+	.headerMenu__logo {
+		height: 50%;
+		width: 50%;
+	}
+}

@@ -1,0 +1,16 @@
+@mixin miseenformetitreblocplat {
+	font-size: $font-size-M;
+	font-weight: $font-weight-medium;
+	text-transform: uppercase;
+	width: 40px;
+	border-bottom: 3px solid $third-color;
+	margin-bottom: 35px;
+	padding-bottom: 5px;
+}
+
+@mixin layoutblocsmenus {
+	width: 100%;
+	height: 30%;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}

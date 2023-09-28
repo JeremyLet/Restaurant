@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ohmyfood</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main>
+			<header class="headerHome">
+				<h1 class="headerHome__title">ohmyfood</h1>
+			</header>
+
+			<form class="form">
+				<div class="form__input">
+					<i class="form__searchfield-icon fa-solid fa-location-dot"></i>
+					<input
+						class="form__searchfield-text"
+						type="text"
+						id="ville"
+						placeholder="Paris, Belleville"
+					/>
+				</div>
+				<div class="form__resultspresentation">
+					<h1 class="form__first-slogan">Réservez le menu qui vous convient</h1>
+					<h2 class="form__second-slogan">
+						Découvrez des restaurants d'exception, sélectionnés par nos soins
+					</h2>
+					<button class="form__result-button">Explorer nos restaurants</button>
+				</div>
+			</form>
+
+			<div class="effetLoadingSpinner">
+				<span class="effet--word1"
+					><i class="effet--icons fa-solid fa-utensils"></i>Oh</span
+				>
+				<span class="effet--word2">my</span>
+				<span class="effet--word3"
+					>food<i class="effet--icons fa-solid fa-utensils"></i
+				></span>
+			</div>
+
+			<section class="partie-filtres">
+				<h1 class="filters__title">Fonctionnement</h1>
+				<div class="filters">
+					<button class="filterbutton">
+						<span class="filterbutton__circleicon fa-stack fa-2x">
+							<i
+								class="filterbutton__circleicon--circleobject fa-solid fa-circle fa-stack-2x"
+							></i>
+							<i
+								class="filterbutton__circleicon--circlenumber fa-solid fa-1 fa-stack-1x"
+							></i>
+						</span>
+						<i class="filterbutton__icon fa-solid fa-mobile-screen"></i>
+						<span class="filterbutton__text">Choisissez un restaurant</span>
+					</button>
+
+					<button class="filterbutton">
+						<span class="filterbutton__circleicon fa-stack fa-2x">
+							<i
+								class="filterbutton__circleicon--circleobject fa-solid fa-circle fa-stack-2x"
+							></i>
+							<i
+								class="filterbutton__circleicon--circlenumber fa-solid fa-2 fa-stack-1x"
+							></i>
+						</span>
+						<i class="filterbutton__icon fa-solid fa-list"></i>
+						<span class="filterbutton__text">Composez votre menu</span>
+					</button>
+
+					<button class="filterbutton">
+						<span class="filterbutton__circleicon fa-stack fa-2x">
+							<i
+								class="filterbutton__circleicon--circleobject fa-solid fa-circle fa-stack-2x"
+							></i>
+							<i
+								class="filterbutton__circleicon--circlenumber fa-solid fa-3 fa-stack-1x"
+							></i>
+						</span>
+						<i class="filterbutton__icon fa-solid fa-store"></i>
+						<span class="filterbutton__text">Dégustez au restaurant</span>
+					</button>
+				</div>
+			</section>
+
+			<section class="partie-restaurants">
+				<h1 class="HomeCards__title">Restaurants</h1>
+
+				<div class="HomeCards">
+					<div class="HomeCard">
+						<a href="lapalettedugout.html">
+							<div class="HomeCard__buttonNEW--ON">
+								<span class="HomeCard__buttonNEW--ONTXT">Nouveau</span>
+							</div>
+							<img
+								class="HomeCard__picture"
+								alt="Image manquante"
+								title="Titre de l'image"
+								src="images/restaurants/la_palette_du_gout.jpg"
+							/>
+							<div class="HomeCard__descriptionBloc">
+								<div class="HomeCard__description">
+									<h3 class="HomeCard__description--Name">
+										La palette du goût
+									</h3>
+									<h4 class="HomeCard__description--Town">Ménilmontant</h4>
+								</div>
+								<svg height="25" width="25" viewBox="-5 0 30 30">
+									<defs>
+										<linearGradient id="gradient1">
+											<stop offset="5%" stop-color="#9356dc" />
+											<stop offset="95%" stop-color="#ff79d9" />
+										</linearGradient>
+									</defs>
+									<path
+										fill="url(#gradient1)"
+										stroke="black"
+										stroke-width="2"
+										d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
+									/>
+								</svg>
+							</div>
+						</a>
+					</div>
+
+					<div class="HomeCard">
+						<a href="lanoteenchantee.html">
+							<div class="HomeCard__buttonNEW--ON">
+								<span class="HomeCard__buttonNEW--ONTXT">Nouveau</span>
+							</div>
+							<img
+								class="HomeCard__picture"
+								alt="Image manquante"
+								title="Titre de l'image"
+								src="images/restaurants/la_note_enchantée.jpg"
+							/>
+							<div class="HomeCard__descriptionBloc">
+								<div class="HomeCard__description">
+									<h3 class="HomeCard__description--Name">La note enchantée</h3>
+									<h4 class="HomeCard__description--Town">Charonne</h4>
+								</div>
+								<svg height="25" width="25" viewBox="-5 0 30 30">
+									<defs>
+										<linearGradient id="gradient2">
+											<stop offset="5%" stop-color="#9356dc" />
+											<stop offset="95%" stop-color="#ff79d9" />
+										</linearGradient>
+									</defs>
+									<path
+										fill="url(#gradient2)"
+										stroke="black"
+										stroke-width="2"
+										d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
+									/>
+								</svg>
+							</div>
+						</a>
+					</div>
+
+					<div class="HomeCard">
+						<a href="alafrancaise.html">
+							<div class="HomeCard__buttonNEW--OFF">Nouveau</div>
+							<img
+								class="HomeCard__picture"
+								alt="Image manquante"
+								title="Titre de l'image"
+								src="images/restaurants/à_la_française.jpg"
+							/>
+							<div class="HomeCard__descriptionBloc">
+								<div class="HomeCard__description">
+									<h3 class="HomeCard__description--Name">À la française</h3>
+									<h4 class="HomeCard__description--Town">Cité Rouge</h4>
+								</div>
+								<svg height="25" width="25" viewBox="-5 0 30 30">
+									<defs>
+										<linearGradient id="gradient3">
+											<stop offset="5%" stop-color="#9356dc" />
+											<stop offset="95%" stop-color="#ff79d9" />
+										</linearGradient>
+									</defs>
+									<path
+										fill="url(#gradient3)"
+										stroke="black"
+										stroke-width="2"
+										d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
+									/>
+								</svg>
+							</div>
+						</a>
+					</div>
+
+					<div class="HomeCard">
+						<a href="ledeclicedessens.html">
+							<div class="HomeCard__buttonNEW--OFF">Nouveau</div>
+							<img
+								class="HomeCard__picture"
+								alt="Image manquante"
+								title="Titre de l'image"
+								src="images/restaurants/le_délice_des_sens.jpg"
+							/>
+							<div class="HomeCard__descriptionBloc">
+								<div class="HomeCard__description">
+									<h3 class="HomeCard__description--Name">
+										Le délice des sens
+									</h3>
+									<h4 class="HomeCard__description--Town">Folie-Méricourt</h4>
+								</div>
+								<svg height="25" width="25" viewBox="-5 0 30 30">
+									<defs>
+										<linearGradient id="gradient4">
+											<stop offset="5%" stop-color="#9356dc" />
+											<stop offset="95%" stop-color="#ff79d9" />
+										</linearGradient>
+									</defs>
+									<path
+										fill="url(#gradient4)"
+										stroke="black"
+										stroke-width="2"
+										d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
+									/>
+								</svg>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer footer--home">
+				<h3 class="footer__title">ohmyfood</h3>
+				<ul class="footer__list">
+					<li class="footer__list-subelement">
+						<i class="footer__list-subelement--icon fa-solid fa-utensils"></i
+						>Proposer un restaurant
+					</li>
+					<li class="footer__list-subelement">
+						<i
+							class="footer__list-subelement--icon fa-solid fa-handshake-angle"
+						></i
+						>Devenir partenaire
+					</li>
+					<li class="footer__list-subelement">Mentions légales</li>
+					<li class="footer__list-subelement">
+						<a class="footer__list--mail" href="mailto:contact@contact.com"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</footer>
+		</main>
+	</body>
+</html>

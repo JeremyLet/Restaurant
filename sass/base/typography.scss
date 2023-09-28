@@ -1,0 +1,57 @@
+$font-logoTitres: "Shrikhand";
+$font-text: "Roboto";
+
+$font-size-XXL: 28px; /* Restautant Name Menus */
+$font-size-XL: 24px; /* H1 */
+$font-size-L: 18px; /* H2 */
+$font-size-M: 16px; /* Placeholder, txt buttons, txt cards */
+$font-size-S: 14px; /*New button */
+$font-size-XS: 10px; /*Menus */
+
+$font-weight-light: 200;
+$font-weight-medium: 400;
+$font-weight-large: 600;
+$font-weight-big: 800;
+
+body {
+	font-family: $font-text;
+}
+
+a {
+	text-decoration: none;
+}
+
+.form__first-slogan,
+.filters__title,
+.HomeCards__title {
+	font-size: $font-size-XL;
+	font-weight: $font-weight-big;
+}
+
+.form__second-slogan {
+	font-size: $font-size-L;
+	font-weight: $font-weight-medium;
+}
+
+.form::placeholder,
+.form__result-button {
+	font-size: $font-size-M;
+}
+
+.HomeCard__description--Name {
+	font-size: $font-size-L;
+	font-weight: $font-weight-big;
+}
+
+.HomeCard__description--Town {
+	font-weight: $font-weight-medium;
+}
+
+.footer__title {
+	font-family: $font-logoTitres;
+	font-weight: $font-weight-light;
+}
+
+.Menucard__platdetails--bold {
+	font-weight: $font-weight-large;
+}
